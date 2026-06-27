@@ -1,0 +1,7 @@
+kernel-bundle: portable
+version: 2026-06-27
+source: claude-kernel-bundle (canonical)
+notes: |
+  これは canonical bundle を各リポジトリへ vendoring したコピー。
+  内容を更新するときは canonical 側を直し、本ファイルの version を上げて再配布する。
+  ドリフト検知用。複数リポジトリ間の同期は INSTALL-PORTABLE.md「§1.1 との折り合い」を参照。

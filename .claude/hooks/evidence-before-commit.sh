@@ -6,9 +6,9 @@
 # CLAUDE.md は context(助言)であって enforcement ではないため、
 # 「commit 前にテストを通す」は prose ではなく hook に降ろす。
 #
-# 配置:  <repo>/.claude/hooks/evidence-before-commit.sh   (chmod +x を忘れず)
-# 配線:  <repo>/.claude/settings.json の hooks.PreToolUse へ登録済み
-#        ($CLAUDE_PROJECT_DIR/.claude/hooks/evidence-before-commit.sh を指す)
+# 配置:  ~/.claude/hooks/evidence-before-commit.sh   (chmod +x を忘れず)
+# 配線:  ~/.claude/settings.json の hooks.PreToolUse へ登録
+#        → settings.hook-snippet.json を参照
 #
 # 仕様:
 #   - 対象は `git commit` を含む Bash コマンドのみ。他は素通り (exit 0)。
