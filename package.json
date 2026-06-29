@@ -4,10 +4,18 @@
   "description": "Neutral I/O contract (JSON Schema) shared by the BFF and the grasp-search and recommendation services. Language-agnostic source of truth.",
   "license": "MIT",
   "private": true,
+  "type": "module",
   "files": [
     "schema",
     "contract-version.json"
   ],
+  "scripts": {
+    "test": "npm run test:contract",
+    "test:contract": "node test/contract.test.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1"
+  },
   "exports": {
     "./contract-version.json": "./contract-version.json",
     "./schema/grasp-search-request.schema.json": "./schema/grasp-search-request.schema.json",
