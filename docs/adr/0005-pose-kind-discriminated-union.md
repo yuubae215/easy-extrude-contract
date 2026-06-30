@@ -49,7 +49,7 @@
   objectiveScores / totalScore) は **触らない**。`additionalProperties:false` を維持し、
   verdict や演出の混入を引き続き拒否する (逆向きの規則: こちらは閉・厳密のまま)。
 - pose を union 化したので `contractVersion` を 1 → 2 に上げる。version 不一致は
-  従来どおり 400 で拒否 (ADR-004 の境界を維持)。
+  従来どおり 400 で拒否 (ADR-0004 の境界を維持)。
 
 ## Consequences — Evidence と tradeoff(§1.2 Evidence)
 
@@ -74,7 +74,7 @@
 ## バージョン粒度のトリガ(細粒度化はいつ正当化されるか)
 
 本決定は contractVersion を **単一の単調増加整数 + 不一致は封筒レベルで 400** という
-既存モデル (README / ADR-004) の上に乗せ、これを **意図的に維持**する。「kind を足す」も
+既存モデル (README / ADR-0004) の上に乗せ、これを **意図的に維持**する。「kind を足す」も
 「kind を変える/消す」も同じ 1 bump に畳む。封筒で一律ハードリジェクトする以上、additive と
 breaking を区別しても観測挙動は変わらず、semver (major/minor/patch) やエンドポイント別
 バージョンを今入れるのは §0/§5 (トリガなしの先回りモデリング禁止) に反する。

@@ -35,5 +35,5 @@ Design decisions are recorded under `docs/adr/`.
 A single contractVersion is shared across every endpoint in this repo: grasp
 and recommendation carry the *same* contractVersion (one canonical
 contract-version.json), so adding an endpoint does not introduce a per-endpoint
-version. (See ADR-004 — same decision, recorded here so a future endpoint does
+version. (See ADR-0004 — same decision, recorded here so a future endpoint does
 not have to re-litigate it.)
